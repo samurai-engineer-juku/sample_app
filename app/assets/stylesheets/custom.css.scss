@@ -161,6 +161,10 @@ input {
   height: auto !important;
 }
 
+input[type="checkbox"] {
+  width: 10%;
+}
+
 #error_explanation {
   color: #f00;
   ul {
