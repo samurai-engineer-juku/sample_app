@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :authenticate_user!, :except=>[:show]
+  before_action :authenticate_user!, :except=>[:show]
   before_action :admin_user,     only: :destroy
 
   def index
